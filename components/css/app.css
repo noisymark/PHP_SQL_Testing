@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&display=swap');
 body{
 font-family: 'Dosis', sans-serif;
-background: #C33764;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #1D2671, #C33764);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #1D2671, #C33764); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-overflow:hidden;
-color:white;
+background-image: url("/components/img/bg.jpg");
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+background-repeat: no-repeat;
+color:black;
 }
 #uvodnitext{
     padding-top: 16px;
@@ -16,4 +17,31 @@ color:white;
 .footer-text{
     display: block;
     margin-top: 20px;
+}
+
+#form{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.form-group input{
+    display: block;
+    width: 40%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#leftside{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: rgba(0, 68, 255, 0.05);
+    background-size: 50%;
+}
+#rightside{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#fa-inline-icon{
+    margin-right: 5px;
 }
