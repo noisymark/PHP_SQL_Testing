@@ -34,8 +34,9 @@ color:black;
 #leftside{
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color: rgba(0, 68, 255, 0.05);
+    background-color: rgba(0, 68, 255, 0.071);
     background-size: 50%;
+    clip-path: polygon(20% 0%, 80% 0%, 100% 20%, 100% 80%, 80% 100%, 20% 100%, 0% 80%, 0% 20%);
 }
 #rightside{
     padding-top: 20px;

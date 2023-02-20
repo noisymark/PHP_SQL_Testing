@@ -1,8 +1,14 @@
 <?php
 if($_SERVER['REQUEST_METHOD']==='POST'){
+        $fname=$_POST['fname'];
+        $lname=$_POST['lname'];
+        $email=$_POST['email'];
+        $password=$_POST['password'];
     include_once 'components/baza.php';
-    $izraz=$veza->prepare('insert into osoba(ime,prezime,email,lozinka,administrator,stanje) values (":fname",":lname",":email",":password","0","1")');
-    $izraz->execute($_POST);
+    $izraz=$veza->prepare("insert into osoba(ime,prezime,email,lozinka,administrator,stanje) values ('$lname','$lname','$email','$password','0','1')");
+    // BEFORE INSERTING THERE SHOULD BE EMAIL-CHECK (NO DOUBLE EMAILS IN DB), INPUT SANITAZITATION AND EMAIL VALIDATION
+    $izraz->execute();
+    header('location: successreg.php');
 }
     
 ?>
