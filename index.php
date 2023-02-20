@@ -10,7 +10,7 @@
         <br>
         <h6>BlueFreedom ensures the freedom of speech is available to everyone!</h6>
         <br>
-        <form action="registration.php" method="POST">
+        <form action="registration.php" method="get">
             <button type="submit" class="btn btn-success text-white"><i id="fa-inline-icon" class="fa-regular fa-user"></i> REGISTER HERE</button>
         </form>
     </div>

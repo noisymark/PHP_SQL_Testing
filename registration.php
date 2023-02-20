@@ -4,11 +4,10 @@ if($_SERVER['REQUEST_METHOD']==='POST'){
         $lname=$_POST['lname'];
         $email=$_POST['email'];
         $password=$_POST['password'];
+        // BEFORE INSERTING THERE SHOULD BE EMAIL-CHECK (NO DOUBLE EMAILS IN DB), INPUT SANITAZITATION AND EMAIL VALIDATION
     include_once 'components/baza.php';
-    $izraz=$veza->prepare("insert into osoba(ime,prezime,email,lozinka,administrator,stanje) values ('$lname','$lname','$email','$password','0','1')");
-    // BEFORE INSERTING THERE SHOULD BE EMAIL-CHECK (NO DOUBLE EMAILS IN DB), INPUT SANITAZITATION AND EMAIL VALIDATION
+    $izraz=$veza->prepare("insert into osoba(ime,prezime,email,lozinka,administrator,stanje) values ('$fname','$lname','$email','$password','0','1')");
     $izraz->execute();
-    header('location: successreg.php');
 }
     
 ?>
