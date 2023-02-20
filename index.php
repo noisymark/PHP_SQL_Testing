@@ -1,4 +1,6 @@
-<?php $email = isset($_GET['email']) ? $_GET['email'] : (isset($_COOKIE['email']) ? $_COOKIE['email'] : ''); ?>
+<?php
+$email = isset($_GET['email']) ? $_GET['email'] : (isset($_COOKIE['email']) ? $_COOKIE['email'] : '');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <?php include_once 'components/header.php'?>

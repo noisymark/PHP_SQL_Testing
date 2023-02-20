@@ -17,7 +17,7 @@ $veza = new PDO($dsn,'root','root',$parametri);
       echo 'Provjerite korisnika i lozinku na bazi';
       break;
     default:
-      echo 'Dogodio se problem. Kontaktirajte nas na XXXXXX';
+      echo $e->getMessage() . ' ' . $e->getCode();
       break;
   }
 }
